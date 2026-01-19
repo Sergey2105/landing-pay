@@ -1,0 +1,46 @@
+@font-face {
+  font-family: Nominee;
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+  src: url("/fonts/Nominee-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: Nominee;
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+  src: url("/fonts/Nominee-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: Nominee;
+  font-weight: 100;
+  font-display: swap;
+  font-style: normal;
+  src: url("/fonts/Nominee-Light.woff") format("woff");
+}
+@font-face {
+  font-family: Nominee;
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+  src: url("/fonts/Nominee-Bold-Extended.woff") format("woff");
+}
+
+body {
+  font-family: Nominee, sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  font-family: Nominee, sans-serif;
+  padding: 0;
+  margin: 0;
+}

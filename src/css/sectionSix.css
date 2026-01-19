@@ -1,0 +1,221 @@
+.btn {
+  background-color: #ffd79c;
+  border-radius: 22px;
+  color: #000;
+  font-size: 18px;
+  padding: 27px 43px;
+  cursor: pointer;
+  border: none;
+  font-weight: 700;
+  transition: background 0.3s;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #ebbd78;
+}
+
+.callback {
+  position: relative;
+  padding: 250px 0 125px;
+  overflow: visible;
+}
+
+.callback__main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+}
+
+.callback__form {
+  margin-top: 100px;
+  width: 480px;
+  max-width: 100%;
+  flex: 0 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.callback__bg-box {
+  position: absolute;
+  right: 0;
+}
+
+.callback__bg:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  transform: translate(-18%, -18%);
+  background: url(../img/callback-bg.png) center no-repeat;
+  background-size: cover;
+  width: 738px;
+  height: 738px;
+}
+
+.callback__bg,
+.callback__img {
+  left: 0;
+  top: 0;
+}
+
+.callback__img {
+  z-index: 1;
+}
+
+.form__text {
+  margin-bottom: 36px;
+  letter-spacing: 0;
+}
+
+.form__item {
+  position: relative;
+}
+
+.form__item:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 32px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.form__item_name:before {
+  background-image: url(../img/user.svg);
+  width: 19px;
+  height: 21px;
+}
+
+.form__item_email:before {
+  background-image: url(../img/email.svg);
+  width: 22px;
+  height: 22px;
+}
+
+.form__item_phone:before {
+  background-image: url(../img/attach.svg);
+  width: 22px;
+  height: 22px;
+}
+
+.form__field {
+  margin-bottom: 8px;
+  display: block;
+}
+
+.form__submit {
+  margin-top: 28px;
+  font-size: 16px;
+  padding: 26px 40px;
+}
+
+.form-field {
+  width: 400px;
+  max-width: 100%;
+  background: rgba(48, 50, 67, 0.44);
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  border-radius: 19px;
+  border: none;
+  padding: 17px;
+  color: #e2e2e2;
+  font-size: 18px;
+  font-weight: 300;
+  padding-left: 75px;
+  border: 1px solid transparent;
+  transition: border 0.3s;
+}
+
+.form-field:focus {
+  outline: 0;
+  border-color: #ffd79c;
+}
+
+.form-field::placeholder {
+  color: inherit;
+}
+
+@media screen and (max-width: 1340px) {
+  .btn {
+    font-size: 16px;
+    padding: 25px 35px;
+    border-radius: 20px;
+  }
+  .callback__bg:before {
+    width: 645px;
+    height: 645px;
+  }
+  .callback__img {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .btn {
+    font-size: 15px;
+    padding: 22px 34px;
+  }
+  .callback {
+    padding-top: 150px;
+    padding-bottom: 260px;
+  }
+  .callback__bg-box {
+    right: -70px;
+    top: 65px;
+  }
+  .callback__main {
+    position: relative;
+  }
+  .callback__form {
+    margin-top: 36px;
+  }
+  .form__text {
+    font-size: 14px;
+  }
+  .form-field {
+    width: 315px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .callback {
+    padding-top: 82px;
+    padding-bottom: 0;
+  }
+  .callback__bg-box {
+    bottom: 130px;
+    right: -60px;
+    top: initial;
+  }
+  .callback__main {
+    padding-bottom: 340px;
+  }
+  .callback__bg {
+    bottom: 78px;
+    top: initial;
+  }
+  .callback__bg:before {
+    width: 415px;
+    height: 415px;
+  }
+  .callback__img {
+    width: 259px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .btn {
+    font-size: 13px;
+    padding: 20px 31px;
+    border-radius: 15px;
+  }
+  .form__submit {
+    padding: 28px 50px;
+  }
+  .callback__form {
+    margin-top: 10px;
+  }
+}

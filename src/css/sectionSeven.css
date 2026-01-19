@@ -1,0 +1,140 @@
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+}
+
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+}
+
+.swiper-android .swiper-slide,
+.swiper-wrapper {
+  transform: translate3d(0, 0, 0);
+}
+
+.swiper-pointer-events {
+  touch-action: pan-y;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+}
+
+.countries {
+  padding: 120px 0;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.countries__title {
+  text-align: center;
+}
+
+.countries__main {
+  margin-top: 55px;
+  overflow: hidden;
+  position: relative;
+}
+
+.countries__main:after,
+.countries__main:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 281px;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.countries__main:before {
+  left: -10px;
+  background: linear-gradient(90deg, #101010 0, rgba(16, 16, 16, 0) 100%);
+}
+
+.countries__main:after {
+  right: -10px;
+  background: linear-gradient(-90deg, #101010 0, rgba(16, 16, 16, 0) 100%);
+}
+
+.countries__lists {
+  width: 1488px;
+  margin: 0 auto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
+}
+
+.countries__list {
+  margin: 37px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.countries__list .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+.countries__item {
+  display: flex;
+  align-items: center;
+  padding: 0 25px;
+}
+
+.countries__item-name {
+  margin-left: 20px;
+  white-space: nowrap;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.swiper-slide {
+  width: auto;
+}
+
+@media screen and (max-width: 992px) {
+  .countries {
+    padding-top: 100px;
+  }
+  .countries__main {
+    margin-top: 43px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .countries {
+    padding-top: 70px;
+  }
+  .countries__main:after,
+  .countries__main:before {
+    width: 116px;
+  }
+  .countries__item {
+    padding: 0 17px;
+  }
+  .countries__item-name {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .countries {
+    padding-bottom: 100px;
+  }
+}
